@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "employee": "employee1",
+        "title": "Select a programming language for web developmen",
+        "description": "Our team wants to develop a web application. We need a language that is easy to maintain, supports backend development, and offers good career opportunities.",
+        "options": "Option A: Python\nOption B: Java\nOption C: JavaScript",
+        "ai_suggestion": "Gemini API Error: gemini-3.8-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.",
+        "ai_risk": "Risk analysis unavailable.",
+        "ai_recommendation": "AI recommendation unavailable.",
+        "status": "Pending",
+        "manager_comment": "",
+        "created_at": "2026-10-10 17:38:17",
+        "reviewed_at": ""
+    },
+    {
+        "id": 2,
+        "employee": "employee1",
+        "title": "select a cloud platform for project deployment",
+        "description": "we want to deploy our project in online with reliable hosting,scability and low budget",
+        "options": "Option A: AWS\nOption B: Microsoft Azure\nOption C: Google Cloud Platform",
+        "ai_suggestion": "Evaluate the deployment requirements against each provider’s entry-level pricing models and your team's current technical expertise. To meet the goals of reliability, scalability, and a low budget:\n* Utilize containerized deployment (e.g., Docker) to ensure workload portability and prevent vendor lock-in.\n* Take advantage of initial free tiers, startup credits, and budget-capping alerts (such as billing alarms) to prevent unexpected overages.\n* Consider managed platform-as-a-service (PaaS) or serverless container solutions (e.g., AWS Lightsail/App Runner, GCP Cloud Run, or Azure App Service) to minimize infrastructure management costs while maintaining seamless autoscaling capabilities.\n\n---\n\n###",
+        "ai_risk": "* Budget Overruns (Cost Risk): All three platforms utilize complex pay-as-you-go pricing models. Without strict budget caps and alerts, autoscaling, data egress, and unattached storage volumes can rapidly exceed budget limits.\n* Vendor Lock-in (Dependency Risk): Relying heavily on proprietary managed services (such as proprietary databases or orchestration tools) will make migrating to another cloud provider costly and difficult in the future.\n* Operational Complexity (Technical Risk):\n  * Option A (AWS): Steep learning curve and complex IAM/networking configurations can lead to misconfigurations or security vulnerabilities if the team lacks AWS experience.\n  * Option B (Azure): Best optimized for Microsoft-centric stacks; standalone open-source deployments can become expensive and less intuitive to manage.\n  * Option C (GCP): Smaller community support and fewer third-party integrations compared to AWS, alongside stricter service deprecation policies historically.\n* Service Downtime & Availability: While all providers offer 99.9%+ SLAs, single-region deployments without redundancy still pose an outage risk regardless of the chosen provider.\n\n---\n\n###",
+        "ai_recommendation": "Recommended Option: Option C: Google Cloud Platform (GCP)  \n*(Alternative: Option A: AWS, if the team already possesses AWS-specific expertise)*\n\nJustification:\n* Cost Efficiency: GCP provides one of the most cost-effective entry points for low-budget projects, offering a generous \"Always Free\" tier, sustained-use discounts that apply automatically without upfront commitments, and predictable pricing for compute resources.\n* Scalability via Cloud Run: GCP’s Cloud Run enables rapid deployment of containerized applications with true scale-to-zero capabilities, meaning you incur zero compute costs when the application is idle, directly aligning with your low-budget requirement.\n* Reliability: GCP runs on Google’s robust global network infrastructure, providing high availability and fast load times out of the box.\n\n*Note: This assessment is submitted for management review. The final decision rests with the manager.*",
+        "status": "Approved",
+        "manager_comment": "",
+        "created_at": "2026-10-10 17:56:54",
+        "reviewed_at": "2026-10-10 17:57:25"
+    }
+]
